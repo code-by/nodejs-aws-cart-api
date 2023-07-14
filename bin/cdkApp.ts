@@ -47,8 +47,8 @@ class NestAppStack extends cdk.Stack {
     });
     
     cartHTTPApi.addRoutes({
-      path: '/cart',
-      methods: [ HttpMethod.GET ],
+      path: '/{proxy+}',
+      // methods: [ HttpMethod.GET ],
       integration: lambdatIntegration,
     });
     
