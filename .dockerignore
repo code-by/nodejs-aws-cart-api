@@ -1,0 +1,43 @@
+# docker files
+**/.dockerignore
+**/Dockerfile*
+**/docker-compose*
+**/compose*
+
+# dist should be rebuilded
+**/dist
+**/test
+dist/
+test/
+
+# node_modules shoud be downloaded
+**/node_modules
+node_modules/
+**/npm-debug.log
+
+# git should be excluded
+**/.git
+**/.gitignore
+
+# vs code and its plugins
+**/.vs
+**/.vscode
+**/.lh
+
+# cdk
+./cdk.out
+**/cdk.out
+
+# env settings
+**/.env
+
+# rest
+README.md
+./scripts
+**/.classpath
+**/*.*proj.user
+**/*.dbmdl
+**/*.jfm
+**/obj
+**/secrets.dev.yaml
+**/values.dev.yaml
